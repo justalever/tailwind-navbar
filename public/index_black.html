@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="/build/tailwind.css" />
+    <title>Let's Build: With Tailwind CSS - Responsive Navbar</title>
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-200 antialiased">
+    <header class="flex flex-wrap items-center bg-black px-6 py-2 lg:px-16 lg:py-0">
+      <div class="flex flex-1 items-center justify-between">
+        <a href="#">
+          <svg width="32" height="36" viewBox="0 0 32 36" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M15.922 35.798c-.946 0-1.852-.228-2.549-.638l-10.825-6.379c-1.428-.843-2.549-2.82-2.549-4.501v-12.762c0-1.681 1.12-3.663 2.549-4.501l10.825-6.379c.696-.41 1.602-.638 2.549-.638.946 0 1.852.228 2.549.638l10.825 6.379c1.428.843 2.549 2.82 2.549 4.501v12.762c0 1.681-1.12 3.663-2.549 4.501l-10.825 6.379c-.696.41-1.602.638-2.549.638zm0-33.474c-.545 0-1.058.118-1.406.323l-10.825 6.383c-.737.433-1.406 1.617-1.406 2.488v12.762c0 .866.67 2.05 1.406 2.488l10.825 6.379c.348.205.862.323 1.406.323.545 0 1.058-.118 1.406-.323l10.825-6.383c.737-.433 1.406-1.617 1.406-2.488v-12.757c0-.866-.67-2.05-1.406-2.488l-10.825-6.379c-.348-.21-.862-.328-1.406-.328zM26.024 13.104l-7.205 13.258-3.053-5.777-3.071 5.777-7.187-13.258h4.343l2.803 5.189 3.107-5.832 3.089 5.832 2.821-5.189h4.352z"></path></svg>
+        </a>
+      </div>
+
+      <label for="menu-toggle" class="pointer-cursor block lg:hidden"
+        ><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden w-full lg:flex lg:w-auto lg:items-center" id="menu">
+        <nav>
+          <ul class="items-center justify-between pt-4 text-base text-white lg:flex lg:pt-0">
+            <li><a class="block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:p-4" href="#">Features</a></li>
+            <li><a class="block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:p-4" href="#">Pricing</a></li>
+            <li><a class="block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:p-4" href="#">Documentation</a></li>
+            <li><a class="mb-2 block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:mb-0 lg:p-4" href="#">Support</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="pointer-cursor mb-4 flex items-center justify-start lg:mb-0 lg:ml-4">
+          <img class="h-10 w-10 rounded-full border-2 border-transparent border-white hover:border-indigo-400" src="https://robohash.org/hicveldicta.png?size=50x50&set=set1" alt="Andy Leverenz" />
+        </a>
+      </div>
+    </header>
+    <div class="px-4">
+      <div class="mx-auto my-16 max-w-3xl rounded-lg bg-white p-16">
+        <h1 class="mb-2 text-2xl font-medium">Let's Build: With Tailwind CSS</h1>
+        <h2 class="mb-4 text-sm font-medium uppercase tracking-wide text-indigo-400">Responsive Navbar</h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum illo cupiditate molestias atque consequuntur ea quo cumque, odit velit sint similique? Asperiores ratione aperiam tempora, alias corrupti deleniti quaerat molestiae.
+      </div>
+    </div>
+  </body>
+</html>
